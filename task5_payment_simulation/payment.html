@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Online Payment Simulation</h2>
+    <form id="paymentForm">
+        <select name="user" required>
+            <option value="">Select User</option>
+            <option value="1">Alice</option>
+            <option value="2">Bob</option>
+        </select>
+        <select name="merchant" required>
+            <option value="">Select Merchant</option>
+            <option value="1">Amazon</option>
+            <option value="2">Flipkart</option>
+        </select>
+        <input type="number" name="amount" placeholder="Amount" required min="1"/>
+        <div id="message" style="color:red;"></div>
+        <button type="submit">Pay</button>
+    </form>
+
+    <script src="payment.js"></script>
+</body>
+</html>

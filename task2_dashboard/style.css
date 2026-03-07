@@ -1,0 +1,40 @@
+/* Simple table styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #5c67f2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+select {
+  margin-right: 15px;
+  padding: 5px;
+}

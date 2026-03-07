@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Dashboard</h2>
+
+    <!-- Filter by Department -->
+    <label for="deptFilter">Filter by Department:</label>
+    <select id="deptFilter">
+        <option value="All">All</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="MECH">MECH</option>
+    </select>
+
+    <!-- Sort Options -->
+    <label for="sortOption">Sort by:</label>
+    <select id="sortOption">
+        <option value="name">Name</option>
+        <option value="dob">DOB</option>
+    </select>
+
+    <!-- Table -->
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Department</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will populate here via JS -->
+        </tbody>
+    </table>
+
+    <!-- Count per department -->
+    <div id="deptCount"></div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
